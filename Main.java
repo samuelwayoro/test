@@ -5,7 +5,6 @@
 package com.sbs.algodojo;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -51,7 +50,7 @@ public class Main {
         data.add("vendredi");
         data.add("samedi");
         data.add("dimanche");
-        
+        System.out.println("debut du code ....");
         data.stream()
                 .filter(s->{System.out.println("filtrage   "+s);return s.startsWith("m");})
                 .map(String::toUpperCase)
